@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+}
+body,input,select,textarea{
+  font-size: 1.6rem;
+  font-family: Ubuntu,Helvetica, Arial, sans-serif;
+}
+.cart-container{
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: 4rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a:hover{
+  color: #ff8000;
+}
+header{
+  grid-area: header;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+header a{
+  color: #fff;
+  text-decoration: none;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+ .main{
+  flex: 3 60rem;
+}
+.sidebar{
+  flex: 1 20rem; 
+ } 
+ button:hover{
+  transform: scale(1.1);  
+ }
+ img:hover{
+  transform: scale(1.02); 
+ }
+ .image{
+    overflow: hidden;
+ }
